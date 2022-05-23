@@ -1,0 +1,90 @@
+body {
+    background: #333;
+    display: flex;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: fit-content;
+    height: 900px;
+    margin: 5px;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+ul {
+    margin: 0;
+}
+
+.header ul {
+    display: flex;
+    justify-content:flex-start;
+}
+
+#home {
+    margin-top: 10%;
+}
+
+a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+#intro-typewriter h1 {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+
+
+
