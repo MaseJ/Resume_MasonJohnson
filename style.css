@@ -1,32 +1,7 @@
 body {
     background: #333;
-    display: flex;
     color: white;
     font-family: Helvetica, sans-serif;
-    flex-direction: column;
-}
-
-
-html body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    scroll-behavior: smooth;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    width: fit-content;
-    height: 900px;
-    margin: 5px;
-    padding: 10px;
 }
 
 li {
@@ -42,10 +17,7 @@ ul {
 .header ul {
     display: flex;
     justify-content:flex-start;
-}
-
-#home {
-    margin-top: 10%;
+    flex-direction: row;
 }
 
 a {
@@ -56,8 +28,91 @@ a {
     padding-right: 30px;
 }
 
-/* DEMO-SPECIFIC STYLES */
-#intro-typewriter h1 {
+
+
+
+
+
+
+/* Styling for main */
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-box {
+    border: 1px white solid;
+    padding: 10px;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:800px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-box {
+    border: 1px white solid;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.experience-box {
+    border: 1px white solid;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    border: 1px white solid;
+    width: 40%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Type Writer effect */
+.intro-typewriter {
     color: #fff;
     font-family: Helvetica, sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -82,6 +137,12 @@ a {
     50% { border-color: white }
   }
 
+  /* Animation for elements when in view */
+.scroll-js {
+    opacity: 0;
+    transition: opacity 1500ms;
+}
 
-
-
+.scroll-js.scrolled {
+    opacity: 1;
+}
