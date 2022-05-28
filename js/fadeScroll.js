@@ -16,11 +16,12 @@ var elementInView = (el, offset = 0) => {
 };
 
 var displayScrollElement = (element) => {
-    element.style.opacity = 1;
+    element.classList.add('scrolled');
+    
 };
 
 var hideScrollElement = (element) => {
-    element.style.opacity = 0;
+    element.classList.remove('scrolled');
 }
 
 var handleScrollAnimation = () => {
@@ -30,11 +31,26 @@ var handleScrollAnimation = () => {
             
         } else {
             hideScrollElement(el);
-            
         }
     })
 }
 
+// Using throttle to limit the times function is called
+// help performance
+
+var throttleTimer = false;
+
+var throttle = (callback, time) => {
+    if (throttleTimer) return;
+
+    throttleTimer = true;
+
+    setTimeout(() => {
+        callback();
+        throttleTimer = false;
+      }, time);
+}
+
 window.addEventListener('scroll', () => {
-    handleScrollAnimation();
+    throttle(handleScrollAnimation, 250);
 })
