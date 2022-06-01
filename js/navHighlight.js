@@ -1,6 +1,5 @@
 var sections = document.querySelectorAll(".highlightNav");
 var navElements = document.querySelectorAll("a");
-console.log(sections);
 window.addEventListener("scroll", () => {
     let current = "";
     

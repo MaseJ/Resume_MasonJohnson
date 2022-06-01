@@ -10,26 +10,30 @@
 <body>
     <div class="header">
         <ul class="menu">
-            <li data-link="home" class="scroll-to"><a class="home">Home</a></li>
-            <li data-link="about" class="scroll-to"><a class="about">About Me</a></li>
-            <li data-link="experience" class="scroll-to"><a class="experience">Experience</a></li>
-            <li data-link="contact" class="scroll-to"><a class="contact">Contact</a></li>
+            <li data-link="home" class="scroll-to"><a class="home1">Home</a></li>
+            <li data-link="about" class="scroll-to"><a class="about1">About</a></li>
+            <li data-link="experience" class="scroll-to"><a class="experience1">Experience</a></li>
+            <li data-link="contact" class="scroll-to"><a class="contact1">Contact</a></li>
         </ul>
     </div>
 
     <main class="main">
         <div class="main-box">
-            <div class="home highlightNav" id="home">
-                <h1 class="intro-typewriter">Hello, my name is Mason.</h1>
+            <div class="home highlightNav" id="home1">
+                <div>
+                    <h1 class="intro-typewriter">Hello, my name is Mason.</h1>
+                </div>
                 <img src="images/image_me2.jpg" class="scroll-js fade-in-bottom" alt="Image of me">
                 <h1 class="scroll-js fade-in-bottom">And I am a Software Developer.</h1>
                 <h1 class="scroll-js fade-in-bottom">Nice to meet you.</h1>
             </div>
+
+            
         </div>
 
         <div class="main-box" id="about">
             <div class="about">
-                <h1 class="highlightNav" id="about">About</h1>
+                <h1 class="highlightNav" id="about1">About</h1>
                 <div id="container-about-1">
                     <div class="about-box scroll-js slide-right" id="box1">
                         <p class="about-text">
@@ -54,7 +58,7 @@
         </div>
 
         <div class="main-box" id="experience">
-            <h1 class="highlightNav" id="experience">Experience</h1>
+            <h1 class="highlightNav" id="experience1">Experience</h1>
             <div class="scroll-js fade-in-bottom">
                 <div class="experience">
                     <div class="experience-box" id="ebox1">
@@ -88,13 +92,43 @@
             </div>
         </div>
 
-        <div class="main-box" id="contact">
-            <h1 class="highlightNav" id="contact">Contact</h1>
-            <div class="contact-section scroll-js fade-in-bottom">
+        <div class="main-box" id="contact-box">
+            <h1 class="highlightNav" id="contact1">Contact</h1>
+            
+            <div class="contact-section scroll-js fade-in-bottom" id="contact-box">
                 
-                <p>
-                    Contact form
-                </p>
+
+                <form target="_blank" action="https://formsubmit.co/a4b5cb1016a1051bc29eee0bb83e4c10" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="text-box">
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                </form>
+                
+            </div>
+        </div>
+        <div id="footer">
+            
+            <div class="hill scroll-js slide-right" id="hill-1">
+                
+            </div>
+            <div class="hill scroll-js slide-left" id="hill-2">
+                
+            </div>
+            <div class="hill scroll-js fade-in-bottom" id="hill-3">
+                
+            </div>
+            <div class="sun" id="sun">
                 
             </div>
         </div>
